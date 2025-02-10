@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+    environment:
+      - FLASK_APP=server.py
+      - FLASK_ENV=production
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80" # Expose frontend on port 80 (Nginx)
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

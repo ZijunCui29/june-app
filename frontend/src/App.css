@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+}
+
+.leftColumn {
+  width: 25%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.rightColumn {
+  width: 70%;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dropZone {
+  border: 2px dashed #ccc;
+  padding: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  color: gray;
+}
+
+.dropZoneActive {
+  border: 2px dashed #007bff;
+  padding: 50px;
+  background: #e3f2fd;
+}
+
+.message {
+  font-family: Garamond;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.success {
+  color: #28a745;
+  background-color: #d4edda;
+}
+
+.message.error {
+  color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableCell {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.button {
+  margin-right: 15px;
+  padding: 8px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.image {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.zoom-controls {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.zoom-controls input {
+  width: 200px;
+  margin: 0 10px;
+}
+
+.zoom-controls span {
+  font-weight: normal;
+}
+
+.fileList {
+  padding-top: 15px;
+}
+
+.fileList ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.fileList li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #d9e9f9;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.fileList li:hover {
+  background-color: #c1def8;
+  transform: scale(1.05);
+}
+
+.fileList li.selected {
+  background-color: #a4cef7;
+  font-weight: bold;
+}
